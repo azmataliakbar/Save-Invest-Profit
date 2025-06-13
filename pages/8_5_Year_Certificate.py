@@ -36,8 +36,8 @@ if st.button("📊 Calculate"):
     total_profit = (investment_amount * annual_profit_percent * 5) / 100
 
     # Tax calculations
-    tax_filer = (total_profit * 15) / 100
-    tax_non_filer = (total_profit * 35) / 100
+    tax_filer = (total_profit * 17) / 100
+    tax_non_filer = (total_profit * 37) / 100
 
     # Net profits
     net_filer = total_profit - tax_filer
@@ -57,8 +57,8 @@ if st.button("📊 Calculate"):
     ✅ Annual Profit Rate: {annual_profit_percent}% <br><br>
 
     💰 Total Profit (5 Years): Rs. {total_profit:,.2f} <br>
-    🔖 Tax (Filer - 15%): Rs. {tax_filer:,.2f} <br>
-    🔖 Tax (Non-Filer - 35%): Rs. {tax_non_filer:,.2f} <br><br>
+    🔖 Tax (Filer - 17%): Rs. {tax_filer:,.2f} <br>
+    🔖 Tax (Non-Filer - 37%): Rs. {tax_non_filer:,.2f} <br><br>
 
     ✅ Net Profit (Filer): Rs. {net_filer:,.2f} <br>
     ✅ Net Profit (Non-Filer): Rs. {net_non_filer:,.2f}

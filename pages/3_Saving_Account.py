@@ -31,14 +31,14 @@ expected_rate = st.number_input("Expected Annual Profit Rate (%)", min_value=0.0
 months = st.number_input("Fixed Profit Term (Months)", min_value=1)
 
 
-filer_status = st.radio("Are you a Filer?", ["Yes (15% Tax)", "No (35% Tax)"])
+filer_status = st.radio("Are you a Filer?", ["Yes (17% Tax)", "No (37% Tax)"])
 
 if st.button("💡 Calculate"):
     # Profit calculation
     total_profit = investment_amount * (expected_rate / 100) * (months / 12)
 
     # Tax logic
-    tax_rate = 0.15 if filer_status == "Yes (15% Tax)" else 0.35
+    tax_rate = 0.17 if filer_status == "Yes (17% Tax)" else 0.35
     tax_deducted = total_profit * tax_rate
     profit_after_tax = total_profit - tax_deducted
     total_balance_after_tax = investment_amount + profit_after_tax

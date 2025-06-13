@@ -32,8 +32,8 @@ if st.button("💡 Calculate"):
     profit_amount = (investment_amount * profit_percent) / 100
 
     # Taxes
-    tax_filer = (profit_amount * 15) / 100
-    tax_non_filer = (profit_amount * 35) / 100
+    tax_filer = (profit_amount * 17) / 100
+    tax_non_filer = (profit_amount * 37) / 100
 
     # Net Profit
     net_filer = (profit_amount - tax_filer) / 2
@@ -53,8 +53,8 @@ if st.button("💡 Calculate"):
     ✅ Profit Rate (6-Month): {profit_percent}% <br><br>
 
     💵 Profit Earned On 1 Year Basis: Rs. {profit_amount:,.2f} <br>
-    🔖 Tax (15%) for Filer: Rs. {tax_filer:,.2f} <br>
-    🔖 Tax (35%) for Non-Filer: Rs. {tax_non_filer:,.2f} <br><br>
+    🔖 Tax (17%) for Filer: Rs. {tax_filer:,.2f} <br>
+    🔖 Tax (37%) for Non-Filer: Rs. {tax_non_filer:,.2f} <br><br>
 
     ✅ Net Profit After 6 Months (Filer): Rs. {net_filer:,.2f} <br>
     ✅ Net Profit After 6 Months (Non-Filer): Rs. {net_non_filer:,.2f}
