@@ -38,7 +38,7 @@ if st.button("💡 Calculate"):
     total_profit = investment_amount * (expected_rate / 100) * (months / 12)
 
     # Tax logic
-    tax_rate = 0.17 if filer_status == "Yes (17% Tax)" else 0.35
+    tax_rate = 0.17 if filer_status == "Yes (17% Tax)" else 0.37
     tax_deducted = total_profit * tax_rate
     profit_after_tax = total_profit - tax_deducted
     total_balance_after_tax = investment_amount + profit_after_tax
